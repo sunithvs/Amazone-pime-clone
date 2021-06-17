@@ -1,0 +1,38 @@
+.hero {
+  margin-top: 5rem;
+  width: 100%;
+  min-height: 70vh;
+  justify-content: center;
+  background-color: #000;
+  background-image:linear-gradient(to right, #000 40%, transparent 58%), url("https://m.media-amazon.com/images/G/31/AmazonVideo/2019/1102620_MLP_1440x675_apv189_V3.jpg");
+  background-size:cover;
+}
+.content {
+    z-index: 3;
+    position: absolute;
+    left: 0;
+  padding-top: 11rem;
+  padding-left: 5.5rem;
+  float: left;
+  width: 45%;
+  color: white;
+}
+.content h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.content h2 {
+  font-size: 1.3rem;
+  font-weight: 200;
+  margin-bottom: 3rem;
+}
+.btn {
+  border: 0;
+  background-color: #0f79af;
+  width: 17rem;
+  height: 3.3rem;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
