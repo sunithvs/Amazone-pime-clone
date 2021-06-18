@@ -8,7 +8,7 @@ function Signup() {
         <img
           src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/avod/AV_Logo_150._CB430404026_.png"
           alt=""
-          className="logo"
+          className="logo1"
         />
         <div className="signIn-form">
           <form action="">
@@ -23,7 +23,7 @@ function Signup() {
             <p className='info'>Passwords must be at least 6 characters.</p>
             <label htmlFor="password">Re-enter Password</label>
             <input className="textBox" type="password" />
-            <button className="btn">Create your amazon  account </button>
+            <button className="btn1">Create your amazon  account </button>
             <p className="privacy">
               By continuing, you agree to Amazon's{" "}
               <a href="/">Conditions of Use</a> and{" "}

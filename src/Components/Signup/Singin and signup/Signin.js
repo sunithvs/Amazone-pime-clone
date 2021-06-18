@@ -7,7 +7,7 @@ function Signin() {
         <img
           src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/avod/AV_Logo_150._CB430404026_.png"
           alt=""
-          className="logo"
+          className="logo1"
         />
         <div className="signIn-form">
           <form action="">
@@ -17,7 +17,7 @@ function Signin() {
             <label htmlFor="password">Password</label>
             <p className="forgot-pass">Forgot your password?</p>
             <input className="textBox" type="password" />
-            <button className="btn">Sign-In</button>
+            <button className="btn1">Sign-In</button>
             <p className="privacy">
               By continuing, you agree to Amazon's{" "}
               <a href="/">Conditions of Use</a> and{" "}
@@ -30,7 +30,7 @@ function Signin() {
             <h2>
               <span>New to Amazon ?</span>
             </h2>
-            <button className="btn new-account">
+            <button className="btn1 new-account">
               Create your Amazon account
             </button>
           </form>

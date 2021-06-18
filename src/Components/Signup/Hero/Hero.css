@@ -129,7 +129,16 @@ h2 {
 .content-family{
   top: 182rem;
 }
+@media only screen and (min-width: 1500px) {
 
+  .page section {
+    
+   
+    margin-left: auto;
+    margin-right: auto;
+   width: 1600px;
+  }
+}
 @media only screen and (max-width: 950px) {
   .page h1 {
     font-size: 2rem;
