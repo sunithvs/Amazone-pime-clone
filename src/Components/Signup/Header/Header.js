@@ -26,6 +26,7 @@ function Header() {
           </li>
         </ul>
       </div>
+      <i className='far fa-user'/>
     </header>
   );
 }

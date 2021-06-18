@@ -3,11 +3,10 @@
   background-color: #222;
 }
 .page section {
+  
   display: block;
-  position: relative;
 }
 .hero {
-  position: absolute;
   margin-top: 4rem;
   width: 100%;
   min-height: 70vh;
@@ -21,11 +20,14 @@
   z-index: 3;
   position: absolute;
   left: 0;
-  padding-top: 15vw;
+  padding-top: 11vw;
   padding-left: 5vw;
   float: left;
   width: 45%;
   color: white;
+}
+.hero-content{
+  top: 0;
 }
 .page h1 {
   font-size: 2rem;
@@ -52,7 +54,7 @@
   font-size: 1rem;
 }
 .entertainment {
-  top: 70vh;
+ 
   background-position: center;
   margin-top: 0%;
   background-image: linear-gradient(to left, #000 40%, transparent 58%),
@@ -68,25 +70,34 @@
   padding-right: 9vw;
   width: 45%;
 }
+.content-entertainment{
+  top: 44rem;
+}
 .membership {
-  top: 140vh;
+  
   background-position: center;
   margin-top: 0;
   background-image: linear-gradient(to right, #000 40%, transparent 58%),
     url("https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/PRIME_multi-benefit_MAGNET_2X._CB1519820207_.jpg");
 }
-
+.content-membership{
+  top: 74rem;
+}
 .tv {
-  top: 210vh;
+ 
   background-position: center;
   background-image: linear-gradient(to left, #000 40%, transparent 58%),
     url("https://images-na.ssl-images-amazon.com/images/G/01/digital/video/Magellan_MLP/MLP_Template_Image_Left.jpg");
   margin-top: 0;
 }
+.content-tv{
+  top: 110rem;
+}
 .features {
-  position: absolute;
-  top: 280vh;
-  padding: 2rem;
+  padding-top: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  height:27rem;
   width: 100%;
   background-color: white;
 }
@@ -95,6 +106,7 @@ h2 {
   margin-bottom: 1rem;
 }
 .box {
+  height: 100%;
   float: left;
   width: 30%;
   margin-left: 2vw;
@@ -108,37 +120,82 @@ h2 {
 }
 
 .family {
-  top: 350vh;
+  
   background-position: center;
   margin-top: 0;
   background-image: linear-gradient(to right, #000 40%, transparent 58%),
     url("https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/IN-kids-30Jan._CB1517304519_.jpg");
 }
-
-.footer {
-  width: 100%;
-  background-color:#222;
-  top: 420vh;
-  bottom: 0;
-  position: absolute;
-  min-height: 15vh;
-  padding-top: 2rem;
-  text-align: center;
-}
-.footer-logo {
-  width: 6rem;
+.content-family{
+  top: 182rem;
 }
 
-.footer li {
-  display: inline;
-  margin-left: 1rem;
-  font-size: 0.8rem;
-  color: rgb(179, 170, 170);
-}
-.footer h1 {
-  cursor: pointer;
-  display: inline;
-  font-size: 0.8rem;
-  text-decoration: none;
-  color: rgb(83, 145, 216);
+@media only screen and (max-width: 950px) {
+  .page h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  .page h2 {
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+  }
+ .page{
+   overflow: hidden;
+ }
+  .box{
+    padding-top: 0;
+    width: 100%;
+    height:33% ;
+     }
+  .features{
+    padding: 2rem;
+    height: 76rem;
+  }
+  .hero {
+    min-height: 20rem;
+    background-size: cover;
+    background-image: linear-gradient(to top, #000 0%, transparent 20%), url('https://m.media-amazon.com/images/G/31/AmazonVideo/2019/1102620_MLP_1440x675_apv189_V3._CR575,0,865,675_AC_.jpg');
+  }
+
+  .content{
+    text-align: center;
+    width: 100%;
+    background-color: #000;
+    position: unset;
+    padding-bottom: 8rem;
+  }
+  .content-right{
+    text-align: center;
+    width: 100%;
+    background-color: #000;
+    position: unset;
+    padding-bottom: 8rem;
+    
+  }
+  .membership{
+    background-image: linear-gradient(to top, #000 0%, transparent 20%), url('https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/PRIME_multi-benefit_MAGNET_2X._CB1519820207_._CR575,0,865,675_AC_.jpg');
+  }
+  .entertainment{
+    margin-top: 20rem;
+    background-image: linear-gradient(to top, #000 0%, transparent 20%), url('https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/IN-Living-Room-V2._CB524587855_._CR0,0,865,675_AC_.jpg');  }
+  .content-entertainment{
+    margin-top: 0;
+  padding-left: 1rem;
+  }
+  .tv{
+    margin-top: 29rem;
+    background-image: linear-gradient(to top, #000 0%, transparent 20%), url('https://images-na.ssl-images-amazon.com/images/G/01/digital/video/Magellan_MLP/MLP_Template_Image_Left._CR0,0,865,675_AC_.jpg');
+
+  }
+  .content-tv{
+    margin-top: 0;
+    padding-bottom: 8rem;
+    padding-left: 1rem;
+  }
+  .family{
+    background-image: linear-gradient(to top, #000 0%, transparent 20%), url('https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/IN-kids-30Jan._CB1517304519_._CR575,0,865,675_AC_.jpg');
+  };
+ 
 }

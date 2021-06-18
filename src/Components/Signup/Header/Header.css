@@ -46,3 +46,22 @@
     color: white;
     margin-left: 1.7rem;
 }
+.fa-user{
+    display: none;
+    font-weight: 100;
+    color: rgb(170, 168, 168);
+    font-size: 1.6rem;
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+    margin-top: 1.2rem;
+}
+
+@media only screen and (max-width: 950px) {
+    .menu {
+        display: none;
+    }
+    .fa-user{
+        display:inline;
+    }
+}
