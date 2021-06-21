@@ -18,14 +18,16 @@ function Signup() {
           console.log(result);
           result.user
             .updateProfile({ displayName: state.name })
-            .catch((err) => console.log(err.message))
+            .catch((err) => setError([err.message]))
             .then(() => {
               console.log("update completed");
               firebase
                 .firestore()
                 .collection("users")
                 .doc(result.uid)
-                .set({ name: state.name, email: state.email });
+                .set({ name: state.name, email: state.email })
+                .catch((err) => setError([err.message]))
+                .then(() => history.push("/sign-in"));
             });
         })
         .catch((err) => {
