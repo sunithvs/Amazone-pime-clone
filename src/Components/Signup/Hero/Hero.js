@@ -1,6 +1,14 @@
 import React from "react";
 import "./Hero.css";
+import {useHistory} from 'react-router-dom'
+
+
+
 function Hero() {
+  const history= useHistory()
+  function signInHandler(){
+      history.push("/sign-in");
+  }
   return (
     <div className="page">
       {/* welcome section */}
@@ -12,7 +20,7 @@ function Hero() {
               Join Prime to watch the latest movies, TV shows and award-winning
               Amazon Originals
             </h2>
-            <button className="btn">Login to join Prime</button>
+            <button onClick={signInHandler}  className="btn">Login to join Prime</button>
           </div>
           
       </section>
@@ -27,7 +35,7 @@ function Hero() {
               With your Prime membership, you have access to exclusive Amazon
               Originals, blockbuster Bollywood movies, regional movies and more.
             </h2>
-            <button className="btn">Get started</button>
+            <button onClick={signInHandler} className="btn">Get started</button>
           </div>
        
       </section>
@@ -42,7 +50,7 @@ function Hero() {
               unlimited free, fast delivery on eligible items, exclusive access
               to deals &amp; more. Get started
             </h2>
-            <button className="btn">Get started</button>
+            <button onClick={signInHandler}  className="btn">Get started</button>
             <h3>*Go to amazon.in/prime for more information</h3>
           </div>
       </section>
@@ -59,7 +67,7 @@ function Hero() {
               Press the voice button on the remote and say the name of the title
               you want to watch to find it in seconds.
             </h2>
-            <button className="btn">Get started</button>
+            <button onClick={signInHandler}  className="btn">Get started</button>
           </div>
       </section>
       {/* End of TV section */}
@@ -119,7 +127,7 @@ function Hero() {
         enjoy secure, ad-free kids entertainment. Kids can enjoy popular
         TV shows like Peppa Pig, Powerpuff Girls, and Chhota Bheem.
       </h2>
-      <button className="btn">Get started</button>
+      <button onClick={signInHandler} className="btn">Get started</button>
     </div>
 </section>
     </div>

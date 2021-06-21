@@ -8,6 +8,36 @@
   margin: auto;
   text-align: center;
 }
+.logo1 {
+  cursor: pointer;
+}
+
+.alert-container {
+  display: flex;
+  color: rgba(255, 2, 2, 0.876);
+  text-align: start;
+  box-shadow: 0 0 0 4px #fcf4f4 inset;
+  border: 1px solid rgba(255, 2, 2, 0.507);
+  margin-top: 1.5rem;
+  width: 100%;
+  border-radius: 5px;
+  padding: 1rem 0rem 1rem 1rem;
+}
+.fa-exclamation-triangle {
+  color: #ff4c05;
+  font-size: 1.5rem;
+}
+.msgs {
+  margin-left: 1rem;
+}
+.msgs h1 {
+  font-size: 1.3rem !important;
+}
+.msgs ul {
+  margin-left: 1rem;
+  font-size: 0.9rem !important;
+  color: rgb(70, 68, 68);
+}
 .signIn-form {
   margin-top: 1rem;
   width: 100%;
@@ -21,25 +51,31 @@
   font-weight: 800;
 }
 
-.signIn-form label{
-    margin-top: .7rem;
-    display: block;
+.signIn-form label {
+  margin-top: 0.7rem;
+  display: inline;
 }
 .forgot-pass {
+  display: inline;
   float: right;
   color: rgb(28, 97, 138);
   font-weight: 200;
   cursor: pointer;
 }
 .textBox {
-    margin-bottom: .5rem;
+  border-radius: 3px;
+  border: 1px solid rgb(144, 141, 141);
+  margin-bottom: 0.5rem;
   margin-top: 0.3rem;
   width: 100%;
   height: 2rem;
-  
+  outline: none;
 }
 
-
+.focus-effect:focus {
+  border: 1px solid #e77600;
+  box-shadow: 0 0 3px 2px rgb(228 121 17 / 50%);
+}
 
 .screen h1 {
   font-weight: 400;
@@ -47,10 +83,10 @@
   margin-bottom: 1rem;
 }
 .btn1 {
+  outline: none;
   width: 100%;
   height: 2rem;
   margin-top: 0.5rem;
-  margin-bottom: 1rem;
   background-image: linear-gradient(to bottom, #e6d4a8, #f0c14b);
   border-radius: 3px;
   border-width: 1.5px;
@@ -58,7 +94,7 @@
   cursor: pointer;
 }
 
-.btn:hover {
+.btn1:hover {
   background-image: linear-gradient(to bottom, #dfc073, #cfa63d);
 }
 
@@ -72,21 +108,20 @@
   margin-right: 0.5rem;
 }
 .main a {
-    text-decoration: none;
-    color: rgb(28, 97, 138);
+  text-decoration: none;
+  color: rgb(28, 97, 138);
 }
 .main a:hover {
-    text-decoration: underline;
-    color: rgb(175, 26, 26);
+  text-decoration: underline;
+  color: rgb(175, 26, 26);
 }
-.info{
-    
-    margin-left: .5rem;
-    display: inline;
-    color: rgb(85, 83, 83);
+.info {
+  margin-left: 0.5rem;
+  display: inline;
+  color: rgb(85, 83, 83);
 }
-.fa-info-circle{
-    color: #e0a81a;
+.fa-info-circle {
+  color: #e0a81a;
 }
 .signIn-form h2 {
   font-size: 0.7rem;
@@ -102,35 +137,89 @@
   background: #fff;
   padding: 0 10px;
 }
-.new-account{
-    background-image: linear-gradient(to bottom, #ffffff, #dddbd6);
+.new-account {
+  background-image: linear-gradient(to bottom, #ffffff, #dddbd6);
 }
 
 .new-account:hover {
-    background-image: linear-gradient(to bottom, #e2e2e2, #ceccc7);
-  }
-.main footer{
-    
-    padding-top: 2rem;
-    margin-top: 2rem;
-    background-image:linear-gradient(to bottom ,rgba(245, 244, 244, 0.527),white );
-   
-    text-align: center;
+  background-image: linear-gradient(to bottom, #e2e2e2, #ceccc7);
 }
-.main footer ul{
-    font-size: .8rem;
-   
-    
+.main footer {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.945),
+    white
+  );
+
+  text-align: center;
+}
+.main footer ul {
+  font-size: 0.8rem;
 }
 
-.main footer li{
-    margin-right: 1rem;
-    display: inline;
-    
-} 
+.main footer li {
+  margin-right: 1rem;
+  display: inline;
+}
 
-.main footer p{
-    margin-top: 1rem;
-    font-size: .7rem;
-    color: #585856;
+.main footer p {
+  margin-top: 1rem;
+  font-size: 0.7rem;
+  color: #585856;
+}
+
+/* email verification classes */
+
+.resend {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+  color: rgb(28, 97, 138);
+}
+.resend:hover {
+  text-decoration: underline;
+  color: rgb(175, 26, 26);
+}
+
+/* mobile number adding classes */
+.otp {
+  margin-bottom: 1rem;
+}
+.instructions {
+  font-size: 0.84rem;
+  font-weight: 440;
+  line-height: 1.3rem;
+  margin-bottom: 1rem;
+}
+.input_div select {
+  background-color: transparent;
+  border: 0;
+}
+.input_div select:checked {
+  background-color: transparent;
+  border: 0;
+  text-decoration: none;
+}
+
+.numberBox {
+  padding-left: 0.6rem;
+  width: 69%;
+}
+
+.lag_btn {
+  outline: none;
+  border-width: 1px;
+  border-color: #b6b6b2;
+  border-radius: 4px;
+  width: 26%;
+  margin-top: 0.5rem;
+  height: 2rem;
+  margin-right: 5%;
+
+  padding-right: 0.2rem;
 }
